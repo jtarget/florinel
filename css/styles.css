@@ -64,13 +64,14 @@ ul>li>ul {
   padding-left: 1em;
 }
 
-/* img:first-of-type {
-  display: inherit;
-}
-
 img {
   display: none;
 }
+
+.current {
+  display: block;
+}
+
 /*
 ul > li:active > ul {
   display:block;

@@ -9,7 +9,7 @@ $("a.submenu").click(function() {
 });
 
 
-$(function(){
+/*$(function(){
       count = 1;
       total = 2;
       $(".img-swap").on('click', function() {
@@ -29,16 +29,19 @@ $(function(){
 
       });
     });
-
-/* var currentPicture = 1;
-var numberOfPictures = 2;
-
-$(".right-container").click(function() {
-  currentPicture++;
-  if (currentPicture > $("img").length) {
-    currentPicture = 1;
-  }
-  $("img").css("display", "none");
-  $(`#photo${currentPicture}`).css('display', 'inherit');
-});
 */
+$(function() {
+  var currentPicture = 1;
+  var numberOfPictures = 2;
+  for (i = 1; i <= numberOfPictures; i++) {
+  $(`#photo_${i}`).on('click', function() {
+    i++;
+    if (i > numberOfPictures) {
+    i = 1;
+    }
+    $("img").removeClass("current");
+    console.log(i);
+    $(`#photo_${i}`).addClass("current");
+  });
+}
+});
