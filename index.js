@@ -14,7 +14,7 @@ $(function(){
       total = 2;
       $(".img-swap").on('click', function() {
 
-        $(this).fadeOut(800, function() {
+        $(this).fadeOut(200, function() {
             $(this).attr('src', 'photos/home/photo_' + count + '.jpeg');
         }).fadeIn(200);
 
