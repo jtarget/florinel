@@ -17,7 +17,7 @@ $(function(){
         for (i = 1; i < total; i++) {
           $(this).load("photos/home/photo_" + i + ".jpeg");
         }
-        $(this).delay(400).fadeOut(200, function() {
+        $(this).fadeOut(200, function() {
             $(this).attr('src', 'photos/home/photo_' + count + '.jpeg');
         }).fadeIn(200);
 
