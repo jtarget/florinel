@@ -64,6 +64,25 @@ ul>li>ul {
   padding-left: 1em;
 }
 
+#photo-home {
+  transition: opacity 0.4s ease-in;
+  -webkit-transition: opacity 0.4s ease-in;
+  -moz-transition: opacity 0.4s ease-in;
+  -ms-transition: opacity 0.4s ease-in;
+  -o-transition: opacity 0.4s ease-in;
+  opacity: 1;
+}
+
+.transitioning-src {
+    transition: opacity 0.4s ease-out;
+    -webkit-transition: opacity 0.4s ease-out;
+    -moz-transition: opacity 0.4s ease-out;
+    -ms-transition: opacity 0.4s ease-out;
+    -o-transition: opacity 0.4s ease-out;
+    opacity: 0;
+}
+
+/*
 img {
   display: none;
 }

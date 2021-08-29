@@ -30,18 +30,34 @@ $("a.submenu").click(function() {
       });
     });
 */
-$(function() {
-  var currentPicture = 1;
+/*$(function() {
   var numberOfPictures = 2;
   for (i = 1; i <= numberOfPictures; i++) {
+    console.log(i);
   $(`#photo_${i}`).on('click', function() {
-    i++;
+    console.log(i);
     if (i > numberOfPictures) {
     i = 1;
     }
     $("img").removeClass("current");
     console.log(i);
     $(`#photo_${i}`).addClass("current");
+    i++;
   });
 }
+});
+*/
+$(function() {
+  var numberOfPictures = 2;
+  var currentPicture = 1;
+  $("#photo-home").on('click', function() {
+    $(this).addClass('transitioning-src');
+    if (currentPicture < numberOfPictures) {
+      currentPicture++;
+      $(this).attr("src", "photos/home/photo_" + currentPicture + ".jpeg");
+    } else {
+      currentPicture = 1;
+      $(this).attr("src", "photos/home/photo_" + currentPicture + ".jpeg");
+    }
+  });
 });
