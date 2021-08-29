@@ -1,0 +1,65 @@
+.uk-container {
+  margin: 1.2em;
+  padding-top: 1.2em;
+}
+
+.left-container {
+  width: 15%;
+  float: left;
+}
+
+.right-container {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.second-menu {
+  padding-top: 5em;
+}
+
+html{
+  font-family: 'Abel', sans-serif;
+}
+
+h1 {
+font-size: 1.2em;
+font-family: 'Abel', sans-serif;
+padding-bottom: 1em;
+}
+
+ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+  line-height: 1.7em;
+}
+
+a {
+  color: black;
+}
+
+li a:active {
+color: grey;
+}
+
+li a:hover {
+color: black;
+text-decoration: none;
+}
+
+
+ul > li {
+  width:10em;
+  float:left;
+}
+ul > li > ul {
+  display:none;
+}
+ul > li:active > ul {
+  display:block;
+}
+ul > li > ul {
+  padding-left:1em;
+}
