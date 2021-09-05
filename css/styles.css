@@ -1,6 +1,6 @@
 .uk-container {
   margin: 0.7em;
-  padding-top: 1em;
+  padding-top: 0.8em;
 }
 
 .left-main-container {
@@ -9,16 +9,64 @@
 }
 
 .right-container {
-  width: 45%;
-  padding-top: 3em;
+  width: 78%;
+  padding-top: 2.2em;
   margin-left: auto;
   margin-right: auto;
-  background-color:white;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
 
+.right-container img {
+  text-align: center;
+  padding-left: 5em;
+  max-height: 650px;
+}
+
+.contact {
+  width: 78%;
+  text-align: center;
+  padding: 7em 0 0 0;
+}
+
+.clients {
+  width: 17%;
+  padding: 2.7em 0 0 0;
+  margin-left: 19em;
+}
+
+.clients img {
+  padding-bottom: 2em;
 }
 
 .selected {
   color: grey;
+}
+
+.description {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  padding: 1em 0 0 1em;
+  position: absolute;
+  top: 240px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  background: rgb(40, 40, 43);
+  color: #C0C0C0;
+  visibility: hidden;
+  opacity: 0.9;
+  transition: opacity .2s, visibility .2s;
+}
+
+.description:hover .overlay {
+  visibility: visible;
+  opacity: 0.9;
 }
 
 html {
@@ -26,17 +74,35 @@ html {
 }
 
 h1 {
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: 'Abel', sans-serif;
   padding-bottom: 1em;
+  letter-spacing: 0.1px;
+}
+
+h2 {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: grey;
+}
+
+h1 a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  letter-spacing: 0.2px;
+  font-size: 0.9em;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-size: 0.8em;
+  font-size: 0.7em;
   line-height: 1.7em;
+  letter-spacing: 0.2px;
 }
 
 a {
@@ -57,11 +123,12 @@ ul>li>ul {
   padding-top: 1em;
   display: none;
   width: 15em;
+  font-size: 1em;
 }
 
 .visible {
   display: block;
-  padding-left: 1em;
+  padding-left: 0.7em;
 }
 
 #photo-home {
@@ -74,38 +141,10 @@ ul>li>ul {
 }
 
 .transitioning-src {
-    transition: opacity 0.4s ease-out;
-    -webkit-transition: opacity 0.4s ease-out;
-    -moz-transition: opacity 0.4s ease-out;
-    -ms-transition: opacity 0.4s ease-out;
-    -o-transition: opacity 0.4s ease-out;
-    opacity: 0;
+  transition: opacity 0.4s ease-out;
+  -webkit-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  -ms-transition: opacity 0.4s ease-out;
+  -o-transition: opacity 0.4s ease-out;
+  opacity: 0;
 }
-
-/*
-img {
-  display: none;
-}
-
-.current {
-  display: block;
-}
-
-/*
-ul > li:active > ul {
-  display:block;
-}
-ul > li > ul {
-  padding-left:1em;
-}
-
-$("ul > li > ul").css("display", "block");
-$("ul > li > ul").css("padding-left", "1em");
-$("ul > li > ul").css("padding-bottom", "35em");
-
-
-var $this = $(this);
-var isToggled = !$this.data("isToggled");
-$this.data("isToggled", isToggled);
-$("ul > li > ul").css("display", isToggled ? "block" : "");
-$("ul > li > ul").css("padding", isToggled ? "0 0 35em 1em" : "");
